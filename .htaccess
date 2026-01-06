@@ -1,0 +1,28 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# ---------------------------------------
+# 1. Remove .php from URLs
+# ---------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# ---------------------------------------
+# 2. Force canonical URLs (no .php)
+# ---------------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?]
+RewriteRule ^ %1 [R=301,L]
+
+# ---------------------------------------
+# 3. Optional: Default index handling
+# ---------------------------------------
+DirectoryIndex index.php
+
+# ---------------------------------------
+# 4. Prevent direct access to includes (optional but smart)
+# ---------------------------------------
+<FilesMatch "(header|footer|config|includes)\.php$">
+    Require all denied
+</FilesMatch>
