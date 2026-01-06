@@ -83,9 +83,7 @@
 <script>
   window.addEventListener("load", function () {
     if (window.RocketChatWidget) {
-      RocketChatWidget.init({
-        apiBase: document.currentScript?.dataset?.apiBase
-      });
+      RocketChatWidget.init();
     } else {
       console.error("RocketChatWidget not found");
     }
