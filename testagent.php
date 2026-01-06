@@ -73,7 +73,8 @@
     });
   </script>
 
-  <script
+  <!-- Rocket Reception Widget -->
+<script
   src="https://widget.rocketreception.ca/widget.js"
   data-api-base="https://rocketagent.onrender.com"
   data-subscriber="rocketsciencedesigns"
@@ -89,6 +90,7 @@
     }
   });
 </script>
+
 
 
 
