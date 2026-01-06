@@ -75,7 +75,7 @@
 
   <script
   src="https://widget.rocketreception.ca/widget.js"
-  data-api-base="https://YOUR-RENDER-URL.onrender.com"
+  data-api-base="https://rocketagent.onrender.com"
   data-subscriber="rocketsciencedesigns"
   defer
 ></script>
