@@ -78,18 +78,12 @@
   src="https://widget.rocketreception.ca/widget.js"
   data-api-base="https://rocketagent.onrender.com"
   data-subscriber="rocketsciencedesigns"
-  defer
 ></script>
 
 <script>
-  window.addEventListener("load", function () {
-    if (window.RocketChatWidget) {
-      RocketChatWidget.init();
-    } else {
-      console.error("RocketChatWidget not found");
-    }
-  });
+  if (window.RocketChatWidget) RocketChatWidget.init();
 </script>
+
 
 
 
