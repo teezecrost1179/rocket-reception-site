@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Winnipeg Beauty — Demo</title>
+    <meta name="description" content="Winnipeg Beauty — demo salon website (home page only)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optional: swap to any font you want -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top demo notice -->
+    <div class="demo-bar" role="note" aria-label="Demo site notice">
+      <span><strong>Demo site:</strong> navigation is intentionally non-functional.</span>
+      <button class="linklike" data-demo-modal="open" aria-haspopup="dialog">What’s this?</button>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" data-demo-link aria-label="Winnipeg Beauty home">
+          <!-- Replace with your own logo -->
+          <img src="assets/logo.png" alt="Winnipeg Beauty" class="brand-logo" onerror="this.style.display='none'">
+          <span class="brand-text">
+            <span class="brand-name">Winnipeg Beauty</span>
+            <span class="brand-tag">Hair • Color • Extensions</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#" data-demo-link>Home</a>
+          <a href="#" data-demo-link>Services</a>
+          <a href="#" data-demo-link>Gallery</a>
+          <a href="#" data-demo-link>Contact</a>
+          <button class="btn btn-primary" data-demo-link>Book now</button>
+        </nav>
+
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav" hidden>
+        <a href="#" data-demo-link>Home</a>
+        <a href="#" data-demo-link>Services</a>
+        <a href="#" data-demo-link>Gallery</a>
+        <a href="#" data-demo-link>Contact</a>
+        <button class="btn btn-primary" data-demo-link>Book now</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="kicker">Luxury salon experience • Winnipeg</p>
+            <h1>Color, confidence, and hair that actually behaves.</h1>
+            <p class="subhead">
+              A modern, cozy space focused on transformations, healthy hair, and “wow, that’s me?” mirror moments.
+            </p>
+
+            <div class="hero-cta">
+              <button class="btn btn-primary" data-demo-link>Book an appointment</button>
+              <button class="btn btn-ghost" data-demo-modal="open">View demo notice</button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num">4.9★</div>
+                <div class="stat-label">Avg. rating (demo)</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">500+</div>
+                <div class="stat-label">Happy clients (demo)</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Since 2004</div>
+                <div class="stat-label">Experience (demo)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="promo">
+              <p class="promo-kicker">Start your year in style</p>
+              <p class="promo-big">20% Off</p>
+              <p class="promo-small">First-time clients (demo offer)</p>
+              <button class="btn btn-primary btn-block" data-demo-link>Book now</button>
+              <button class="btn btn-ghost btn-block" data-demo-link>Call salon</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Services</h2>
+            <p>The work we do (demo list)</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">✨</div>
+              <h3>Highlights</h3>
+              <p>Bright, blended, and natural-looking dimension.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🎨</div>
+              <h3>Balayage</h3>
+              <p>Soft gradients that grow out like a dream.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">💨</div>
+              <h3>AirTouch</h3>
+              <p>Ultra-diffused lightness with a clean blend.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">✂️</div>
+              <h3>Cut & Styling</h3>
+              <p>Shape, movement, and a finish that lasts.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🧴</div>
+              <h3>Keratin & Treatments</h3>
+              <p>Smoother texture and healthier-looking shine.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🧷</div>
+              <h3>Extensions</h3>
+              <p>Length, fullness, and seamless color matching.</p>
+            </article>
+          </div>
+
+          <div class="center">
+            <button class="btn btn-primary" data-demo-link>See pricing (demo)</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section section-alt" id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <h2>Our Work</h2>
+            <p>A few transformations (images are placeholders)</p>
+          </div>
+
+          <div class="gallery">
+            <figure class="g">
+              <img src="assets/gallery-1.jpg" alt="Gallery image 1" loading="lazy" />
+            </figure>
+            <figure class="g">
+              <img src="assets/gallery-2.jpg" alt="Gallery image 2" loading="lazy" />
+            </figure>
+            <figure class="g">
+              <img src="assets/gallery-3.jpg" alt="Gallery image 3" loading="lazy" />
+            </figure>
+            <figure class="g">
+              <img src="assets/gallery-4.jpg" alt="Gallery image 4" loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="center">
+            <button class="btn btn-ghost" data-demo-link>Follow on Instagram (disabled)</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-head">
+            <h2>What customers say</h2>
+            <p>Realistic-looking testimonials (demo text)</p>
+          </div>
+
+          <div class="quotes">
+            <blockquote class="quote">
+              <p>“Best color I’ve had in years. The blend is unreal and it still looks great weeks later.”</p>
+              <footer>— Mallory C.</footer>
+            </blockquote>
+
+            <blockquote class="quote">
+              <p>“Super welcoming, very transparent, and I left feeling genuinely confident.”</p>
+              <footer>— Nandini B.</footer>
+            </blockquote>
+
+            <blockquote class="quote">
+              <p>“I came in with an idea and they helped me land on the right look for my hair.”</p>
+              <footer>— Valeri K.</footer>
+            </blockquote>
+          </div>
+
+          <div class="center">
+            <button class="btn btn-primary" data-demo-link>Read more reviews (disabled)</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-alt" id="about">
+        <div class="container split">
+          <div>
+            <div class="section-head left">
+              <h2>About us</h2>
+              <p>Our story (demo copy)</p>
+            </div>
+            <p>
+              Winnipeg Beauty is a boutique salon built around artistry, healthy hair, and transformations that fit real life.
+              Every service starts with listening, then a plan, then results you can actually maintain.
+            </p>
+            <p class="muted">
+              This is a demo homepage used to showcase Rocket Reception. Replace this copy with your own brand story.
+            </p>
+
+            <div class="mini-cta">
+              <button class="btn btn-primary" data-demo-link>Book now</button>
+              <button class="btn btn-ghost" data-demo-link>Call salon</button>
+            </div>
+          </div>
+
+          <aside class="info-card" aria-label="Salon info">
+            <h3>Salon info</h3>
+            <div class="info-row">
+              <span class="info-label">Address</span>
+              <span class="info-value">123 Portage Ave (demo), Winnipeg, MB</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Email</span>
+              <span class="info-value">hello@winnipegbeauty.ca (demo)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Phone</span>
+              <span class="info-value">(204) 555-0123 (demo)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Hours</span>
+              <span class="info-value">
+                Mon–Fri 10–8<br />
+                Sat 10–8<br />
+                Sun 10–7
+              </span>
+            </div>
+
+            <div class="social">
+              <button class="icon-btn" aria-label="Facebook (disabled)" data-demo-link>
+                <!-- simple inline SVG -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v3H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+              </button>
+              <button class="icon-btn" aria-label="Instagram (disabled)" data-demo-link>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm6.5-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+              </button>
+              <button class="icon-btn" aria-label="X (disabled)" data-demo-link>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.6l-5.2-6.7L5.2 22H2l8.1-9.3L1 2h6.8l4.7 6.1L18.9 2zm-1.2 18h1.7L7.2 3.9H5.4L17.7 20z"/></svg>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Email capture -->
+      <section class="section">
+        <div class="container newsletter">
+          <div>
+            <h2>Keep me updated</h2>
+            <p class="muted">Demo form only — it won’t submit anywhere.</p>
+          </div>
+          <form class="newsletter-form" id="newsletter">
+            <input type="email" placeholder="Email address" aria-label="Email address" required />
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <strong>Winnipeg Beauty</strong>
+          <div class="muted">Demo homepage for Rocket Reception</div>
+        </div>
+
+        <div class="footer-right">
+          <a href="#" data-demo-link>Privacy policy</a>
+          <a href="#" data-demo-link>Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Demo modal -->
+    <div class="modal-backdrop" id="demoModal" hidden></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="demoTitle" id="demoDialog" hidden>
+      <div class="modal-inner">
+        <h3 id="demoTitle">This is a demo site</h3>
+        <p>
+          Navigation, social buttons, and “Book now” are intentionally disabled so this page can be used as a clean demo.
+          You can wire up specific links later if you want to showcase Rocket Reception features.
+        </p>
+        <div class="modal-actions">
+          <button class="btn btn-primary" data-demo-modal="close">Got it</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
