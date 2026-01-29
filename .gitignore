@@ -1,0 +1,3 @@
+# Ignore any folders starting with "temp" at any depth
+temp*/
+**/temp*/
