@@ -195,7 +195,7 @@ body{
   background:
     linear-gradient( to right, rgba(15,15,18,0.80) 0%, rgba(15,15,18,0.35) 55%, rgba(15,15,18,0.78) 100%),
     url("assets/hero.jpg") center/cover no-repeat;
-  background-position: center 18%;
+  background-position: center top;
   filter: saturate(1.02) contrast(1.02);
 }
 
