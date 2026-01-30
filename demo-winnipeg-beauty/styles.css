@@ -181,7 +181,7 @@ body{
 /* Hero */
 .hero{
   position: relative;
-  min-height: 82vh;
+  min-height: 66vh;
   display:flex;
   align-items: center;
   overflow:hidden;
@@ -219,7 +219,7 @@ body{
 
 .hero h1{
   font-family: "Playfair Display", serif;
-  font-size: clamp(38px, 4.4vw, 58px);
+  font-size: clamp(32px, 3.7vw, 49px);
   line-height: 1.04;
   margin: 0 0 14px;
 }
