@@ -68,23 +68,12 @@ body{
   display:flex;
   align-items:center;
   justify-content: space-between;
-  padding: 18px 22px;   /* more breathing room */
+  padding: 18px 36px;   /* more breathing room */
   gap: 16px;
-}
-
-/* Inset “pill” background so it doesn't hug edges */
-.header-inner::before{
-  content:"";
-  position:absolute;
-  left: 14px;
-  right: 14px;
-  top: 10px;
-  height: 64px;
   border-radius: 999px;
   background: rgba(0,0,0,0.35);
   border: 1px solid var(--line);
   backdrop-filter: blur(10px);
-  z-index: -1;
 }
 
 /* Brand */
@@ -92,16 +81,15 @@ body{
   display:flex;
   align-items:center;
   gap: 12px;
-  min-width: 260px;
   color: var(--text);
   text-decoration: none;
 }
 
 /* PNG logo */
 .brand-logo{
-  width: 46px;
-  height: 46px;
-  flex: 0 0 46px;
+  width: 53px;
+  height: 53px;
+  flex: 0 0 53px;
   border-radius: 14px;
   object-fit: contain;
   background: rgba(0,0,0,0.25);
@@ -154,9 +142,9 @@ body{
 .btn:hover{ background: var(--panel2); }
 
 .btn-primary{
-  background: linear-gradient(135deg, rgba(216,180,140,0.98), rgba(242,214,179,0.92));
-  border-color: rgba(0,0,0,0.08);
-  color: #151515;
+  background: #f473bf;
+  border-color: rgba(0,0,0,0.15);
+  color: #1a0a12;
 }
 
 .btn-primary:hover{ filter: brightness(1.02); }
@@ -429,10 +417,6 @@ body{
 @media (max-width: 520px){
   .price-grid{ grid-template-columns: 1fr; }
   .gallery{ grid-template-columns: 1fr; }
-
-  .header-inner::before{
-    height: 58px;
-  }
 
   .brand-name{ font-size: 18px; }
   .brand-tag{ display:none; }
