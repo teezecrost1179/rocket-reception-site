@@ -1,16 +1,21 @@
 (function () {
   const demoModal = document.getElementById("demoModal");
   const demoDialog = document.getElementById("demoDialog");
+  let scrollY = 0;
 
   function openModal() {
     demoModal.hidden = false;
     demoDialog.hidden = false;
-    document.body.style.overflow = "hidden";
+    scrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.classList.add("modal-open");
+    document.body.style.top = `-${scrollY}px`;
   }
   function closeModal() {
     demoModal.hidden = true;
     demoDialog.hidden = true;
-    document.body.style.overflow = "";
+    document.body.classList.remove("modal-open");
+    document.body.style.top = "";
+    window.scrollTo(0, scrollY);
   }
 
   // Any nav/social/CTA click should open demo modal
