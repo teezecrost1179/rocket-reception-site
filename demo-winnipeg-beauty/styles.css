@@ -71,9 +71,9 @@ body{
   padding: 12px 36px;   /* restore vertical breathing room */
   gap: 16px;
   border-radius: 999px;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.32);
   border: 1px solid var(--line);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(9px);
 }
 
 /* Brand */
@@ -181,7 +181,7 @@ body{
 /* Hero */
 .hero{
   position: relative;
-  min-height: 66vh;
+  min-height: 53vh;
   display:flex;
   align-items: center;
   overflow:hidden;
