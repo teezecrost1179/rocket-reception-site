@@ -151,9 +151,15 @@ body.modal-open{
   color: #1a0a12;
 }
 
-.btn-primary:hover{ filter: brightness(1.02); }
+.btn-primary:hover{ background: #f6a0d2; }
 
-.btn-ghost{ background: transparent; }
+.btn-ghost{
+  background: #ffffff;
+  border-color: rgba(0,0,0,0.18);
+  color: #111111;
+}
+
+.btn-ghost:hover{ background: #f2f2f2; }
 
 /* Mobile */
 .hamburger{
