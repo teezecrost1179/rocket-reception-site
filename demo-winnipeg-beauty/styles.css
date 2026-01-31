@@ -134,7 +134,7 @@ body.modal-open{
   border: 1px solid var(--line);
   background: var(--panel);
   color: var(--text);
-  padding: 11px 18px;
+  padding: 12px 20px;
   border-radius: 999px;
   cursor: pointer;
   font-weight: 500;
@@ -253,6 +253,17 @@ body.modal-open{
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+.section-light{
+  background: #ffffff;
+  color: #111111;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.section-light .section-head h2{
+  color: #111111;
 }
 
 .section-photo{
