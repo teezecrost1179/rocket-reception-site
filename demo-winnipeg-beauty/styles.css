@@ -134,11 +134,13 @@ body.modal-open{
   border: 1px solid var(--line);
   background: var(--panel);
   color: var(--text);
-  padding: 11px 14px;
+  padding: 11px 18px;
   border-radius: 999px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-size: 1.55em;
 }
 
 .btn:hover{ background: var(--panel2); }
@@ -303,16 +305,23 @@ body.modal-open{
   padding: 18px;
 }
 
-.price-card h3{
-  margin: 0 0 10px;
+.price-row{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.price-row h3{
+  margin: 0;
   font-size: 15px;
   letter-spacing: 0.2px;
 }
 
 .price{
-  margin: 0 0 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .desc{
@@ -363,6 +372,51 @@ body.modal-open{
 
 .quote p{ margin:0; color: var(--text); line-height: 1.6; }
 .quote footer{ margin-top: 12px; color: var(--muted); font-size: 13px; }
+
+/* Staff */
+.staff-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.staff-card{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+}
+
+.staff-photo{
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid var(--line);
+}
+
+.staff-card h3{
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.staff-role{
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.staff-quote{
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.6;
+}
 
 .center{ display:flex; justify-content:center; margin-top: 20px; }
 
@@ -419,6 +473,7 @@ body.modal-open{
 @media (max-width: 1000px){
   .price-grid{ grid-template-columns: repeat(2, 1fr); }
   .nav a{ font-size: 13px; }
+  .staff-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 900px){
@@ -429,6 +484,7 @@ body.modal-open{
 
   .gallery{ grid-template-columns: 1fr 1fr; }
   .quotes{ grid-template-columns: 1fr; }
+  .staff-grid{ grid-template-columns: 1fr; }
 
   .mobile-nav a{
     color: var(--muted);
