@@ -328,6 +328,7 @@ body.modal-open{
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .rr-form input{
@@ -389,6 +390,16 @@ body.modal-open{
 
 .rr-cta strong{
   letter-spacing: 1px;
+}
+
+.rr-cta p{
+  margin: 0;
+  font-size: clamp(22px, 3.2vw, 30px);
+  font-weight: 700;
+}
+
+.rr-cta strong{
+  color: #f473bf;
 }
 
 .section-photo{
