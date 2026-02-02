@@ -72,7 +72,7 @@
   const callMeForm = document.getElementById("rr-callme-form");
   if (callMeForm) {
     const apiBase = "https://rocketagent.onrender.com";
-    const subscriber = "winnipegbeauty";
+    const subscriber = "demo-gatekeeper";
     const status = callMeForm.querySelector(".rr-form-status");
 
     callMeForm.addEventListener("submit", async (e) => {
