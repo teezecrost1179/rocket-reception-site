@@ -355,15 +355,14 @@ body.modal-open{
   width: 48px;
   height: 48px;
   display: block;
+  filter: drop-shadow(0 0 8px rgba(244,115,191,0.55));
 }
 
 .rr-bubble-arrow{
-  width: 24px;
-  height: 24px;
-  border-right: 3px solid #111111;
-  border-bottom: 3px solid #111111;
-  transform: rotate(-45deg);
-  opacity: 0.7;
+  width: 26px;
+  height: 26px;
+  display: block;
+  opacity: 0.75;
 }
 
 .rr-note{
