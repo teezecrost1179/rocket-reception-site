@@ -195,7 +195,7 @@ body.modal-open{
 /* Hero */
 .hero{
   position: relative;
-  min-height: 53vh;
+  min-height: 32vw;
   display:flex;
   align-items: center;
   overflow:hidden;
@@ -653,4 +653,8 @@ body.modal-open{
 
   .brand-name{ font-size: 18px; }
   .brand-tag{ display:none; }
+}
+
+@media (max-width: 520px){
+  .site-header{ top: 46px; }
 }
