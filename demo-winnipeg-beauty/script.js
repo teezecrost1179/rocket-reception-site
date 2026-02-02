@@ -77,6 +77,7 @@
 
     callMeForm.addEventListener("submit", async (e) => {
       e.preventDefault();
+      e.stopPropagation();
       const phoneInput = callMeForm.querySelector('input[name="phone"]');
       const phone = phoneInput?.value.trim() ?? "";
 
