@@ -60,13 +60,12 @@ body.modal-open{
 
 /* Header overlays hero */
 .site-header{
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 50;
   background: transparent;
-  margin-top: 4px;
 }
 
 .header-inner{
@@ -656,5 +655,5 @@ body.modal-open{
 }
 
 @media (max-width: 520px){
-  .site-header{ top: 46px; }
+  .site-header{ top: 4px; }
 }
