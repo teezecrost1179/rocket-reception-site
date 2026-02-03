@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://rocketsciencedesigns.com/rocket-science-designs-brandmark-300.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/rocket-science-designs-brandmark-300.png">
+    <link rel="icon" type="image/png" href="/assets/rocket-reception-favicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
