@@ -196,7 +196,7 @@ body.modal-open{
   position:absolute;
   inset:0;
   background:
-    radial-gradient(60% 80% at 20% 50%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.25) 45%, rgba(255,255,255,0) 75%),
+    radial-gradient(60% 80% at 20% 50%, rgba(255,255,255,0.63) 0%, rgba(255,255,255,0.29) 45%, rgba(255,255,255,0) 75%),
     url("assets/hero.jpg") center/cover no-repeat;
   background-position: center bottom;
   filter: saturate(1.02) contrast(1.02);
@@ -228,6 +228,8 @@ body.modal-open{
   margin: 0 0 14px;
   text-transform: uppercase;
   font-weight: 800;
+  color: #111111;
+  text-shadow: 0 6px 16px rgba(255,255,255,0.6);
 }
 
 .subhead{
