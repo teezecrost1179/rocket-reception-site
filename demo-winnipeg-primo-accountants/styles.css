@@ -458,7 +458,7 @@ body.modal-open{
 .price-card{
   background: rgba(255,255,255,0.05);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 0;
   padding: 18px;
 }
 
@@ -498,7 +498,7 @@ body.modal-open{
 
 .g{
   margin:0;
-  border-radius: var(--radius);
+  border-radius: 0;
   overflow:hidden;
   border: 1px solid var(--line);
   background: rgba(255,255,255,0.04);
@@ -541,7 +541,7 @@ body.modal-open{
 .staff-card{
   background: rgba(255,255,255,0.05);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 0;
   padding: 18px;
   text-align: center;
 }
@@ -549,7 +549,7 @@ body.modal-open{
 .staff-photo{
   width: 108px;
   height: 108px;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: cover;
   display: block;
   margin: 0 auto 12px;
