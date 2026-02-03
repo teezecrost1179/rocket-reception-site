@@ -648,6 +648,11 @@ body.modal-open{
   .price-grid{ grid-template-columns: 1fr; }
   .gallery{ grid-template-columns: 1fr; }
   .header-inner{ backdrop-filter: none; }
+  .hero-bg{
+    background:
+      radial-gradient(60% 80% at 20% 50%, rgba(255,255,255,0.69) 0%, rgba(255,255,255,0.31) 45%, rgba(255,255,255,0) 75%),
+      url("assets/hero.jpg") center/cover no-repeat;
+  }
 
   .brand-name{ font-size: 18px; }
   .brand-tag{ display:none; }
