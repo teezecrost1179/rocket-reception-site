@@ -77,9 +77,9 @@ body.modal-open{
   padding: 12px 36px;   /* restore vertical breathing room */
   gap: 16px;
   border-radius: 0;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.7);
   border: 1px solid var(--line);
-  backdrop-filter: blur(11px);
+  backdrop-filter: blur(3px);
 }
 
 /* Brand */
