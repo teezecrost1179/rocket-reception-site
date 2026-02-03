@@ -21,11 +21,6 @@ body{
   color: var(--text);
 }
 
-h1, h2, h3{
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 body.modal-open{
   position: fixed;
   left: 0;
@@ -232,7 +227,7 @@ body.modal-open{
   line-height: 1.04;
   margin: 0 0 14px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   color: #111111;
   text-shadow: 0 6px 16px rgba(255,255,255,0.6);
 }
@@ -430,7 +425,7 @@ body.modal-open{
   font-size: 34px;
   margin: 0 0 8px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.6px;
 }
 
@@ -515,7 +510,7 @@ body.modal-open{
   margin:0;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 0;
+  border-radius: var(--radius);
   padding: 18px;
 }
 
