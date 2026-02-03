@@ -21,6 +21,11 @@ body{
   color: var(--text);
 }
 
+h1, h2, h3{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 body.modal-open{
   position: fixed;
   left: 0;
@@ -510,7 +515,7 @@ body.modal-open{
   margin:0;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 0;
   padding: 18px;
 }
 
