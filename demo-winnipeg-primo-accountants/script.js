@@ -94,7 +94,7 @@
         body: JSON.stringify({
           phone,
           subscriber,
-          transferPreselect: "beauty"
+          transferPreselect: "accountant"
         })
       });
 
