@@ -1,12 +1,12 @@
 :root{
-  --bg: #000000;
-  --panel: rgba(255,255,255,0.06);
-  --panel2: rgba(255,255,255,0.10);
-  --text: #f5f5f7;
-  --muted: rgba(245,245,247,0.72);
-  --line: rgba(255,255,255,0.12);
-  --accent2: #f473bf;
-  --shadow: 0 18px 50px rgba(0,0,0,0.35);
+  --bg: #ffffff;
+  --panel: rgba(0,0,0,0.04);
+  --panel2: rgba(0,0,0,0.08);
+  --text: #333333;
+  --muted: #666666;
+  --line: #e0e0e0;
+  --accent2: #ae8332;
+  --shadow: 0 18px 40px rgba(0,0,0,0.12);
   --radius: 18px;
 }
 
@@ -16,7 +16,7 @@ html,body{ height:100%; }
 
 body{
   margin:0;
-  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -38,8 +38,7 @@ body.modal-open{
 .demo-bar{
   position: relative;
   z-index: 60;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(10px);
+  background: #f6f6f6;
   border-bottom: 1px solid var(--line);
   padding: 10px 18px;
   display:flex;
@@ -56,6 +55,8 @@ body.modal-open{
   cursor: pointer;
   text-decoration: underline;
   font: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* Header overlays hero */
@@ -76,9 +77,9 @@ body.modal-open{
   padding: 12px 36px;   /* restore vertical breathing room */
   gap: 16px;
   border-radius: 999px;
-  background: rgba(0,0,0,0.32);
+  background: rgba(255,255,255,0.92);
   border: 1px solid var(--line);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(11px);
 }
 
 /* Brand */
@@ -98,20 +99,6 @@ body.modal-open{
   object-fit: contain;
 }
 
-.brand-text{ display:flex; flex-direction: column; line-height: 1.1; }
-.brand-name{
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-  letter-spacing: 0.4px;
-  white-space: nowrap;
-}
-.brand-tag{
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 4px;
-  white-space: nowrap;
-}
-
 /* Desktop nav */
 .nav{
   display:flex;
@@ -121,41 +108,44 @@ body.modal-open{
 }
 
 .nav a{
-  color: var(--muted);
+  color: var(--text);
   text-decoration:none;
   font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.6px;
 }
 
-.nav a:hover{ color: var(--text); }
+.nav a:hover{ color: var(--accent2); }
 
 /* Buttons */
 .btn{
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: #ffffff;
   color: var(--text);
   padding: 12px 20px;
   border-radius: 999px;
   cursor: pointer;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  font-size: 1.55em;
+  font-size: 1.1em;
 }
 
-.btn:hover{ background: var(--panel2); }
+.btn:hover{ background: var(--panel); }
 
 .btn-primary{
-  background: #f473bf;
-  border-color: rgba(0,0,0,0.15);
-  color: #1a0a12;
+  background: var(--accent2);
+  border-color: rgba(0,0,0,0.2);
+  color: #ffffff;
 }
 
-.btn-primary:hover{ background: #f6a0d2; }
+.btn-primary:hover{ background: #c49641; }
 
 .btn-ghost{
   background: #ffffff;
   border-color: rgba(0,0,0,0.18);
-  color: #111111;
+  color: var(--text);
 }
 
 .btn-ghost:hover{ background: #f2f2f2; }
@@ -183,8 +173,8 @@ body.modal-open{
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
   border: 1px solid var(--line);
-  background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
   padding: 12px;
   display: grid;
@@ -206,8 +196,8 @@ body.modal-open{
   position:absolute;
   inset:0;
   background:
-    linear-gradient( to right, rgba(15,15,18,0.80) 0%, rgba(15,15,18,0.35) 55%, rgba(15,15,18,0.78) 100%),
-    url("assets/hero.jpg") center/cover no-repeat;
+    linear-gradient( to bottom, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.88) 100%),
+    url("assets/blueprint-staircase.png") center/cover no-repeat;
   background-position: center top;
   filter: saturate(1.02) contrast(1.02);
 }
@@ -224,17 +214,19 @@ body.modal-open{
 
 .kicker{
   color: var(--accent2);
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   font-size: 12px;
   margin: 0 0 14px;
+  font-weight: 700;
 }
 
 .hero h1{
-  font-family: "Playfair Display", serif;
-  font-size: clamp(32px, 3.7vw, 49px);
+  font-size: clamp(28px, 3.2vw, 44px);
   line-height: 1.04;
   margin: 0 0 14px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .subhead{
@@ -255,20 +247,22 @@ body.modal-open{
 .section{ padding: 64px 0; }
 
 .section-alt{
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  background:
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    url("assets/blueprint-staircase.png") center/cover no-repeat;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 .section-light{
   background: #ffffff;
-  color: #111111;
+  color: var(--text);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 .section-light .section-head h2{
-  color: #111111;
+  color: var(--text);
 }
 
 .rr-grid{
@@ -287,33 +281,32 @@ body.modal-open{
 }
 
 .rr-highlight{
-  background: #111111;
-  color: #ffffff;
-  border-color: rgba(0,0,0,0.2);
+  background: #ffffff;
+  color: var(--text);
+  border-color: var(--accent2);
 }
 
 .rr-eyebrow{
   margin: 0 0 8px;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #777777;
-}
-
-.rr-highlight .rr-eyebrow{
-  color: rgba(255,255,255,0.7);
+  letter-spacing: 1.4px;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .rr-phone{
   margin: 0 0 8px;
   font-size: clamp(22px, 3.2vw, 30px);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.3px;
+  color: var(--accent2);
+  text-transform: uppercase;
 }
 
 .rr-subhead{
   margin: 0;
-  color: rgba(255,255,255,0.8);
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -334,7 +327,7 @@ body.modal-open{
   flex: 1 1 200px;
   padding: 12px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.2);
   font: inherit;
 }
 
@@ -342,7 +335,7 @@ body.modal-open{
   display: block;
   width: 100%;
   font-size: 12px;
-  color: rgba(255,255,255,0.8);
+  color: var(--muted);
 }
 
 .rr-bubble{
@@ -362,7 +355,7 @@ body.modal-open{
   width: 48px;
   height: 48px;
   display: block;
-  filter: drop-shadow(0 0 8px rgba(244,115,191,0.55));
+  filter: drop-shadow(0 0 6px rgba(174,131,50,0.35));
 }
 
 .rr-bubble-arrow{
@@ -383,15 +376,15 @@ body.modal-open{
   margin-top: 16px;
   padding: 14px 16px;
   border-radius: 14px;
-  background: #f6f6f6;
+  background: #fafafa;
   border: 1px solid rgba(0,0,0,0.08);
-  color: #222222;
+  color: var(--text);
 }
 
 .rr-cta{
   margin-top: 12px;
   text-align: center;
-  color: #111111;
+  color: var(--text);
 }
 
 .rr-cta strong{
@@ -402,10 +395,11 @@ body.modal-open{
   margin: 0;
   font-size: clamp(22px, 3.2vw, 30px);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .rr-cta strong{
-  color: #f473bf;
+  color: var(--accent2);
 }
 
 .section-photo{
@@ -413,21 +407,10 @@ body.modal-open{
   overflow: hidden;
 }
 
-.section-photo::before{
-  content:"";
-  position: absolute;
-  inset: 0;
+.section-photo{
   background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-    url("assets/salon-photo.jpg") center/cover no-repeat;
-  filter: blur(12px);
-  transform: scale(1.06);
-  z-index: 0;
-}
-
-.section-photo > *{
-  position: relative;
-  z-index: 1;
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    url("assets/blueprint-staircase.png") center/cover no-repeat;
 }
 
 .section-head{
@@ -436,9 +419,11 @@ body.modal-open{
 }
 
 .section-head h2{
-  font-family: "Playfair Display", serif;
   font-size: 34px;
   margin: 0 0 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.6px;
 }
 
 .section-head p{ margin:0; color: var(--muted); }
@@ -452,7 +437,7 @@ body.modal-open{
 }
 
 .price-card{
-  background: rgba(255,255,255,0.05);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
@@ -470,11 +455,14 @@ body.modal-open{
   margin: 0;
   font-size: 15px;
   letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .price{
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--accent2);
 }
 
 .desc{
@@ -497,7 +485,7 @@ body.modal-open{
   border-radius: var(--radius);
   overflow:hidden;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
+  background: #ffffff;
 }
 
 .g img{
@@ -517,14 +505,14 @@ body.modal-open{
 
 .quote{
   margin:0;
-  background: rgba(255,255,255,0.05);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
 }
 
 .quote p{ margin:0; color: var(--text); line-height: 1.6; }
-.quote footer{ margin-top: 12px; color: var(--muted); font-size: 13px; }
+.quote footer{ margin-top: 12px; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; }
 
 /* Staff */
 .staff-grid{
@@ -535,7 +523,7 @@ body.modal-open{
 }
 
 .staff-card{
-  background: rgba(255,255,255,0.05);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
@@ -555,13 +543,16 @@ body.modal-open{
 .staff-card h3{
   margin: 0 0 6px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .staff-role{
   margin: 0 0 10px;
   color: var(--muted);
   font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .staff-quote{
@@ -579,7 +570,7 @@ body.modal-open{
 .footer{
   border-top: 1px solid var(--line);
   padding: 18px 0;
-  background: rgba(0,0,0,0.35);
+  background: #ffffff;
 }
 
 .footer-inner{
@@ -590,11 +581,11 @@ body.modal-open{
 }
 
 .footer-right{ display:flex; gap: 14px; }
-.footer a{ color: #ffffff; text-decoration: underline; font-size: inherit; }
-.footer a:hover{ color: #ffffff; }
+.footer a{ color: var(--text); text-decoration: underline; font-size: inherit; }
+.footer a:hover{ color: var(--accent2); }
 
 .section a{
-  color: #ffffff;
+  color: var(--text);
   text-decoration: underline;
 }
 
@@ -616,7 +607,7 @@ body.modal-open{
 
 .modal-inner{
   width: min(560px, calc(100% - 34px));
-  background: rgba(15,15,18,0.98);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
