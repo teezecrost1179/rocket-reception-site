@@ -1,6 +1,10 @@
 (function () {
   const demoModal = document.getElementById("demoModal");
   const demoDialog = document.getElementById("demoDialog");
+  const demoMessage = document.getElementById("demoMessage");
+  const defaultMessage = demoMessage?.textContent ?? "";
+  const bookingMessage =
+    "Booking and scheduling with many popular calendar and booking platforms is on the way! For now, check out the contact methods offered on this site to test our virtual agents.";
   let scrollY = 0;
 
   function openModal() {
@@ -26,6 +30,10 @@
     const demoLink = t.closest?.("[data-demo-link]");
     if (demoLink) {
       e.preventDefault();
+      const linkText = (demoLink.textContent || "").toLowerCase();
+      if (demoMessage) {
+        demoMessage.textContent = linkText.includes("book") ? bookingMessage : defaultMessage;
+      }
       openModal();
       return;
     }
