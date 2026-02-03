@@ -528,7 +528,7 @@ body.modal-open{
   margin:0;
   background: rgba(255,255,255,0.05);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 0;
   padding: 18px;
 }
 
