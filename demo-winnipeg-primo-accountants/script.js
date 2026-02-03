@@ -2,7 +2,10 @@
   const demoModal = document.getElementById("demoModal");
   const demoDialog = document.getElementById("demoDialog");
   const demoMessage = document.getElementById("demoMessage");
+  const demoTitle = document.getElementById("demoTitle");
   const defaultMessage = demoMessage?.textContent ?? "";
+  const defaultTitle = demoTitle?.textContent ?? "";
+  const bookingTitle = "AI Booking Coming Soon!";
   const bookingMessage =
     "Booking and scheduling with many popular calendar and booking platforms is on the way! For now, check out the contact methods offered on this site to test our virtual agents.";
   let scrollY = 0;
@@ -33,6 +36,9 @@
       const linkText = (demoLink.textContent || "").toLowerCase();
       if (demoMessage) {
         demoMessage.textContent = linkText.includes("book") ? bookingMessage : defaultMessage;
+      }
+      if (demoTitle) {
+        demoTitle.textContent = linkText.includes("book") ? bookingTitle : defaultTitle;
       }
       openModal();
       return;
