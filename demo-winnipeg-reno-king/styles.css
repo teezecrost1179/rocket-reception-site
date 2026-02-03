@@ -154,7 +154,7 @@ body.modal-open{
 .hamburger{
   display:none;
   background: transparent;
-  border: 1px solid var(--line);
+  border: 1px solid #111111;
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
@@ -650,7 +650,7 @@ body.modal-open{
   .header-inner{ backdrop-filter: none; }
   .hero-bg{
     background:
-      radial-gradient(60% 80% at 20% 50%, rgba(255,255,255,0.69) 0%, rgba(255,255,255,0.31) 45%, rgba(255,255,255,0) 75%),
+      linear-gradient(to top, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 100%),
       url("assets/hero.jpg") center/cover no-repeat;
   }
 
