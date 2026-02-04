@@ -17,13 +17,13 @@
     <meta property="og:title" content="Rocket Reception | AI Receptionist for Manitoba Small Businesses">
     <meta property="og:description" content="An AI receptionist that answers calls, texts, and chats using your real business rules—so customers get fast, accurate answers even after hours.">
     <meta property="og:url" content="https://rocketreception.ca/">
-    <meta property="og:image" content="https://rocketreception.ca/assets/rocket-reception.png">
+    <meta property="og:image" content="https://rocketreception.ca/assets/logo.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rocket Reception | AI Receptionist for Manitoba Small Businesses">
     <meta name="twitter:description" content="Fast, accurate call, text, and chat handling for small businesses—without replacing your staff.">
-    <meta name="twitter:image" content="https://rocketreception.ca/assets/rocket-reception.png">
+    <meta name="twitter:image" content="https://rocketreception.ca/assets/logo.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/rocket-reception-favicon.png">
@@ -37,7 +37,7 @@
         :root {
             --bg-header: #ffffff;
             --accent: #d20909;
-            --accent-blue: #128cb5;
+            --accent-blue: #0da7d1;
             --text-light: #111111;      /* for header */
             --text-body: #111111;       /* main/body text */
             --text-muted: #666666;      /* secondary text on white */
@@ -460,9 +460,20 @@
         }
 
         .section-intro {
-            max-width: 760px;
-            margin: 0 0 24px;
+            max-width: 1200px;
+            min-width: 320px;
+            width: 75%;
+            margin: 0 auto 24px;
+            text-align: center;
             color: var(--text-muted);
+        }
+
+        .section-header {
+            max-width: 1200px;
+            min-width: 320px;
+            width: 75%;
+            margin: 0 auto 24px;
+            text-align: center;
         }
 
         .about-grid {
@@ -472,8 +483,8 @@
         }
 
         .about-tile {
-            background-color: #128cb5;
-            background-image: radial-gradient(circle at 100% 100%, #0f7ea6 0%, #128cb5 55%, #128cb5 100%);
+            background-color: #0da7d1;
+            background-image: radial-gradient(circle at 100% 100%, #0b97be 0%, #0da7d1 55%, #0da7d1 100%);
             border-radius: 12px;
             padding: 22px;
             color: #ffffff;
@@ -805,7 +816,7 @@
       "@type": "ProfessionalService",
       "name": "Rocket Science Designs",
       "url": "https://rocketsciencedesigns.com/",
-      "image": "https://rocketsciencedesigns.com//assets/rocket-reception.png",
+      "image": "https://rocketsciencedesigns.com//assets/logo.png",
       "description": "Web design, branding, Shopify development, email marketing, photography, and video production for small businesses and growing brands.",
       "address": {
         "@type": "PostalAddress",
@@ -825,7 +836,7 @@
         <div class="max-width header-inner">
             <div class="header-bar">
                 <a href="/" class="brand">
-                    <img src="/assets/rocket-reception.png" alt="Rocket Science Designs logo">
+                    <img src="/assets/logo.png" alt="Rocket Science Designs logo">
                     <span class="brand-text">ROCKET RECEPTION</span>
                 </a>
 
