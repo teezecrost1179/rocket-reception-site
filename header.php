@@ -395,7 +395,8 @@
         /* SECTIONS (for layout; main markup lives in temp.php) */
 
         main {
-            padding-block: 56px 96px;
+            padding-top: 0;
+            padding-bottom: 96px;
         }
 
         .service-card .service-link { margin-top:12px; display:block; }
@@ -419,10 +420,9 @@
             display: flex;
             align-items: center;
             padding: 48px;
-            border-radius: 16px;
             background-image: url("/assets/hero-image-rocket-reception.jpg");
             background-size: cover;
-            background-position: center;
+            background-position: top;
             background-repeat: no-repeat;
             margin-bottom: 32px;
         }
@@ -672,7 +672,6 @@
             .hero-section {
                 min-height: 320px;
                 padding: 28px;
-                border-radius: 12px;
             }
 
             .hero-headline {
