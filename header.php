@@ -36,7 +36,8 @@
     <style>
         :root {
             --bg-header: #ffffff;
-            --accent: #d91717;
+            --accent: #d20909;
+            --accent-blue: #128cb5;
             --text-light: #111111;      /* for header */
             --text-body: #111111;       /* main/body text */
             --text-muted: #666666;      /* secondary text on white */
@@ -119,7 +120,7 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
             font-size: 18px; /* increased by 1px */
-            color: var(--text-light);
+            color: var(--accent);
         }
 
         .brand img {
