@@ -425,7 +425,8 @@
 
         .section-title {
             font-family: "Poppins", system-ui, sans-serif;
-            font-size: 40px;              /* H2 mobile */
+            font-weight: 600;
+            font-size: 43px;              /* H2 mobile */
             margin: 0;
             color: var(--text-body);
         }
@@ -679,11 +680,14 @@
                 font-size: 22px;
             }
 
-            .section-title,
             .hero h1,
             h1,
             h2 {
                 font-size: 48px;
+            }
+
+            .section-title {
+                font-size: 51px;
             }
         }
 
