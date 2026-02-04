@@ -291,7 +291,7 @@ body.modal-open{
 
 .rr-eyebrow{
   margin: 0 0 8px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
   color: var(--muted);
