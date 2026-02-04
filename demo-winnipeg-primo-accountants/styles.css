@@ -240,6 +240,7 @@ body.modal-open{
   font-size: 14px;
   margin: 0 0 14px;
   text-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  font-weight: 600;
 }
 
 .hero h1{
@@ -680,3 +681,10 @@ body.modal-open{
 @media (max-width: 520px){
   .site-header{ top: 4px; }
 }
+  .kicker{
+    background: #000000;
+    color: #ffffff;
+    text-shadow: none;
+    padding: 6px 10px;
+    display: inline-block;
+  }
