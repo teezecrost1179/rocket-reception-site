@@ -5,7 +5,12 @@
     <section id="about" class="section">
         <div class="max-width">
             <section class="hero-section">
-                <h1 class="hero-headline">Fast Responses Without Fail</h1>
+                <div class="hero-content">
+                    <h1 class="hero-headline">Fast Responses Without Fail</h1>
+                    <p class="hero-support">
+                        Would your SMB benefit from having it's own Intelligent virtual receptionist that answers precisely, right away, at any hour?
+                    </p>
+                </div>
             </section>
 
             <p>

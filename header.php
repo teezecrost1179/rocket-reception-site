@@ -427,15 +427,26 @@
             margin-bottom: 32px;
         }
 
+        .hero-content {
+            max-width: 600px;
+        }
+
         .hero-headline {
             font-family: "Poppins", system-ui, sans-serif;
-            font-weight: 700;
-            font-size: 48px;
+            font-weight: 600;
+            font-size: 44px;
             line-height: 1.05;
             color: #ffffff;
             margin: 0;
-            max-width: 720px;
             text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-support {
+            margin: 16px 0 0;
+            font-size: 19px;
+            line-height: 1.5;
+            color: #ffffff;
+            text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
         }
 
         .section-kicker {
@@ -675,7 +686,7 @@
             }
 
             .hero-headline {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             .hero p {
@@ -724,7 +735,7 @@
             }
 
             .hero-headline {
-                font-size: 56px;
+                font-size: 52px;
             }
         }
 
