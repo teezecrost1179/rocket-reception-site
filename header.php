@@ -125,13 +125,14 @@
         .brand img {
             height: 66px;
             width: auto;
-            margin: 8px 0px 12px 0px;
+            margin: 14px 0px 2px 0px;
         }
 
         .brand span {
             white-space: nowrap;
             position: relative;
             top: 3px; /* nudge text down */
+            font-size: 20.7px;
         }
 
         nav.main-nav {
@@ -715,7 +716,7 @@
             <div class="header-bar">
                 <a href="/" class="brand">
                     <img src="/assets/rocket-reception.png" alt="Rocket Science Designs logo">
-                    <span>Rocket Agent</span>
+                    <span>ROCKET RECEPTION</span>
                 </a>
 
                 <!-- Desktop / mobile nav -->
@@ -777,4 +778,3 @@
             </div>
         </div>
     </header>
-
