@@ -414,6 +414,30 @@
             margin-bottom: 24px;
         }
 
+        .hero-section {
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            padding: 48px;
+            border-radius: 16px;
+            background-image: url("/assets/hero-image-rocket-reception.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 32px;
+        }
+
+        .hero-headline {
+            font-family: "Poppins", system-ui, sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 1.05;
+            color: #ffffff;
+            margin: 0;
+            max-width: 720px;
+            text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
         .section-kicker {
             font-family: "Poppins", system-ui, sans-serif;
             font-size: 20px;              /* eyebrow mobile */
@@ -645,6 +669,16 @@
                 padding-inline: 16px;
             }
 
+            .hero-section {
+                min-height: 320px;
+                padding: 28px;
+                border-radius: 12px;
+            }
+
+            .hero-headline {
+                font-size: 36px;
+            }
+
             .hero p {
                 font-size: 19px; /* keep body size on mobile too */
             }
@@ -688,6 +722,10 @@
 
             .section-title {
                 font-size: 51px;
+            }
+
+            .hero-headline {
+                font-size: 56px;
             }
         }
 

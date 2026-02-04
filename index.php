@@ -4,10 +4,9 @@
     <!-- HERO -->
     <section id="about" class="section">
         <div class="max-width">
-            <div class="section-header">
-                <div class="section-kicker">ROCKET RECEPTION</div>
-                <h1 class="section-title">Let someone else handle the repetitive questions, with infinite patience, time, and knowledge.</h1>
-            </div>
+            <section class="hero-section">
+                <h1 class="hero-headline">Fast Responses Without Fail</h1>
+            </section>
 
             <p>
                 Rocket Reception is a practical AI assistant built to help small businesses handle the “same questions, every day” without losing the human touch.
