@@ -115,7 +115,7 @@
             gap: 16px;
             text-decoration: none;
             font-family: "Poppins", system-ui, sans-serif;
-            font-weight: 800;
+            font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             font-size: 18px; /* increased by 1px */
