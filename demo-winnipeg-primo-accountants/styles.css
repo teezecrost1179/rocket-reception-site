@@ -218,6 +218,8 @@ body.modal-open{
     linear-gradient( to right, rgba(15,15,18,0.80) 0%, rgba(15,15,18,0.35) 55%, rgba(15,15,18,0.78) 100%),
     url("assets/hero.jpg") center/cover no-repeat;
   background-position: center top;
+  background-size: 1600px auto;
+  background-color: #28282a;
   filter: saturate(1.02) contrast(1.02);
 }
 
@@ -237,6 +239,7 @@ body.modal-open{
   text-transform: uppercase;
   font-size: 14px;
   margin: 0 0 14px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .hero h1{
@@ -244,6 +247,7 @@ body.modal-open{
   line-height: 1.04;
   margin: 0 0 14px;
   font-weight: 700;
+  text-shadow: 0 6px 16px rgba(0,0,0,0.22);
 }
 
 .subhead{
@@ -252,6 +256,7 @@ body.modal-open{
   font-size: 16px;
   line-height: 1.55;
   margin: 0 0 22px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.18);
 }
 
 .hero-cta{
