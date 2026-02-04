@@ -665,6 +665,7 @@ body.modal-open{
   .price-grid{ grid-template-columns: 1fr; }
   .gallery{ grid-template-columns: 1fr; }
   .header-inner{ backdrop-filter: none; }
+  .header-inner{ background: rgba(255,255,255,0.57); }
   .hero-bg{
     background:
       linear-gradient(to top, rgba(15,15,18,0.7) 0%, rgba(15,15,18,0) 100%),
