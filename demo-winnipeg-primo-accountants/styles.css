@@ -173,7 +173,7 @@ body.modal-open{
 .hamburger{
   display:none;
   background: transparent;
-  border: 1px solid var(--line);
+  border: 1px solid #111111;
   border-radius: 12px;
   padding: 10px;
   cursor: pointer;
@@ -183,7 +183,7 @@ body.modal-open{
   display:block;
   width: 22px;
   height: 2px;
-  background: var(--text);
+  background: #111111;
   margin: 4px 0;
   opacity: 0.9;
 }
@@ -665,6 +665,12 @@ body.modal-open{
   .price-grid{ grid-template-columns: 1fr; }
   .gallery{ grid-template-columns: 1fr; }
   .header-inner{ backdrop-filter: none; }
+  .hero-bg{
+    background:
+      linear-gradient(to top, rgba(15,15,18,0.7) 0%, rgba(15,15,18,0) 100%),
+      url("assets/hero.jpg") center/cover no-repeat;
+    background-position: left center;
+  }
 
   .brand-name{ font-size: 18px; }
   .brand-tag{ display:none; }
