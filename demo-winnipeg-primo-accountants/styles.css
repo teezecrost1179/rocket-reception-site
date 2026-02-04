@@ -86,7 +86,7 @@ body.modal-open{
   border-bottom: 4px solid var(--accent2);
   border-left: 0;
   border-right: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
 }
 
 /* Brand */
@@ -215,10 +215,10 @@ body.modal-open{
   position:absolute;
   inset:0;
   background:
-    linear-gradient( to right, rgba(15,15,18,0.80) 0%, rgba(15,15,18,0.35) 55%, rgba(15,15,18,0.78) 100%),
+    linear-gradient( to right, rgba(15,15,18,0.65) 0%, rgba(15,15,18,0) 100%),
     url("assets/hero.jpg") center/cover no-repeat;
   background-position: center top;
-  background-size: 1120px auto;
+  background-size: 1192px auto;
   background-color: #28282a;
   filter: saturate(1.02) contrast(1.02);
 }
