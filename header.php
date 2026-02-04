@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rocket Science Designs | Web Design & Digital Creative in Winnipeg</title>
+    <title>Rocket Reception | AI Receptionist for Manitoba Small Businesses</title>
 
     <!-- Basic SEO -->
-    <meta name="description" content="Rocket Science Designs is a Winnipeg-based digital generalist studio offering web design, branding, Shopify builds, email marketing, photography, and video production for small businesses and growing brands.">
+    <meta name="description" content="Rocket Reception is an AI receptionist for Manitoba small businesses. It answers calls, texts, and website chats using your real business policies—supporting your team, not replacing them.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://rocketsciencedesigns.com/">
+    <link rel="canonical" href="https://rocketreception.ca/">
 
-    <meta name="keywords" content="web design Winnipeg, freelance web designer, Shopify developer, branding, email marketing, Rocket Science Designs">
+    <meta name="keywords" content="AI receptionist Manitoba, virtual receptionist Winnipeg, small business call handling, after-hours reception, Rocket Reception">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Rocket Science Designs | Web Design & Digital Creative in Winnipeg">
-    <meta property="og:description" content="Freelance web design and digital creative studio helping brands look sharp, load fast, and sell more online.">
-    <meta property="og:url" content="https://rocketsciencedesigns.com/">
-    <meta property="og:image" content="https://rocketsciencedesigns.com//assets/rocket-reception.png">
+    <meta property="og:title" content="Rocket Reception | AI Receptionist for Manitoba Small Businesses">
+    <meta property="og:description" content="An AI receptionist that answers calls, texts, and chats using your real business rules—so customers get fast, accurate answers even after hours.">
+    <meta property="og:url" content="https://rocketreception.ca/">
+    <meta property="og:image" content="https://rocketreception.ca/assets/rocket-reception.png">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Rocket Science Designs | Web Design & Digital Creative in Winnipeg">
-    <meta name="twitter:description" content="Websites, branding, Shopify, email, and content creation for teams that need a flexible digital generalist.">
-    <meta name="twitter:image" content="https://rocketsciencedesigns.com//assets/rocket-reception.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rocket Reception | AI Receptionist for Manitoba Small Businesses">
+    <meta name="twitter:description" content="Fast, accurate call, text, and chat handling for small businesses—without replacing your staff.">
+    <meta name="twitter:image" content="https://rocketreception.ca/assets/rocket-reception.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/rocket-reception-favicon.png">
@@ -35,9 +35,9 @@
 
     <style>
         :root {
-            --bg-header: #08060f;
+            --bg-header: #ffffff;
             --accent: #d91717;
-            --text-light: #ffffff;      /* for header */
+            --text-light: #111111;      /* for header */
             --text-body: #111111;       /* main/body text */
             --text-muted: #666666;      /* secondary text on white */
             --max-width: 1500px;
@@ -97,26 +97,6 @@
             min-height: var(--nav-height);
             padding-top:0px; 
             padding-bottom:0px;
-        }
-
-        .header-video {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .header-overlay {
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at top, rgba(31, 27, 53, 0.1), rgba(5, 4, 12, 0.9));
-            z-index: 1;
         }
 
         .header-bar {
@@ -732,12 +712,6 @@
     <!-- Sticky header: logo + nav + hamburger -->
     <header id="top" class="site-header">
         <div class="max-width header-inner">
-            <video class="header-video" autoplay muted loop playsinline>
-                <source src="https://rocketsciencedesigns.com/video%20pixel%20loop.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <div class="header-overlay"></div>
-
             <div class="header-bar">
                 <a href="/" class="brand">
                     <img src="/assets/rocket-reception.png" alt="Rocket Science Designs logo">
