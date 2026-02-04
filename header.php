@@ -459,6 +459,38 @@
             text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
         }
 
+        .section-intro {
+            max-width: 760px;
+            margin: 0 0 24px;
+            color: var(--text-muted);
+        }
+
+        .about-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .about-tile {
+            background-color: #128cb5;
+            background-image: radial-gradient(circle at 100% 100%, #0f7ea6 0%, #128cb5 55%, #128cb5 100%);
+            border-radius: 12px;
+            padding: 22px;
+            color: #ffffff;
+        }
+
+        .about-tile h3 {
+            margin: 0 0 8px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .about-tile p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         .section-kicker {
             font-family: "Poppins", system-ui, sans-serif;
             font-size: 20px;              /* eyebrow mobile */
@@ -470,18 +502,18 @@
 
         .section-title {
             font-family: "Poppins", system-ui, sans-serif;
-            font-weight: 600;
-            font-size: 43px;              /* H2 mobile */
             margin: 0;
             color: var(--text-body);
         }
 
-        /* Content headings */
-        h1,
+        /* Content headings (exclude hero) */
+        .content-headline,
+        .section-title,
+        h1:not(.hero-headline),
         h2 {
             font-family: "Poppins", system-ui, sans-serif;
-            font-weight: 700;
-            font-size: 40px;        /* mobile size */
+            font-weight: 600;
+            font-size: 48px;
             line-height: 1.1;
             margin: 32px 0 12px;
             color: var(--text-body);
@@ -721,6 +753,10 @@
             .section {
                 padding-block: 48px;
             }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (min-width: 640px) {
@@ -732,6 +768,12 @@
         @media (min-width: 1024px) {
             .services-grid {
                 grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 641px) and (max-width: 1023px) {
+            .about-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
@@ -747,16 +789,6 @@
             .hero-kicker,
             .section-kicker {
                 font-size: 22px;
-            }
-
-            .hero h1,
-            h1,
-            h2 {
-                font-size: 48px;
-            }
-
-            .section-title {
-                font-size: 51px;
             }
 
             .hero-headline {
