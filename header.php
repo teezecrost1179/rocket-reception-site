@@ -130,10 +130,14 @@
         }
 
         .brand span {
-            white-space: nowrap;
             position: relative;
             top: 3px; /* nudge text down */
             font-size: 20.7px;
+        }
+
+        .brand-text {
+            white-space: nowrap;
+            line-height: 1.05;
         }
 
         nav.main-nav {
@@ -419,16 +423,22 @@
             min-height: 420px;
             display: flex;
             align-items: center;
-            padding: 0 48px 48px;
+            padding: 12px 48px 48px;
+            margin-top: 3px;
             background-image: url("/assets/hero-image-rocket-reception.jpg");
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
             margin-bottom: 32px;
+            position: relative;
         }
 
         .hero-content {
+            width: 50%;
+            min-width: 200px;
             max-width: 600px;
+            position: relative;
+            z-index: 1;
         }
 
         .hero-headline {
@@ -675,6 +685,13 @@
             }
         }
 
+        @media (max-width: 360px) {
+            .brand-text {
+                max-width: 110px;
+                white-space: normal;
+            }
+        }
+
         @media (max-width: 640px) {
             .max-width {
                 padding-inline: 16px;
@@ -682,11 +699,19 @@
 
             .hero-section {
                 min-height: 320px;
-                padding: 0 28px 28px;
+                padding: 12px 28px 28px;
             }
 
             .hero-headline {
                 font-size: 32px;
+            }
+
+            .hero-section::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 0;
             }
 
             .hero p {
@@ -769,7 +794,7 @@
             <div class="header-bar">
                 <a href="/" class="brand">
                     <img src="/assets/rocket-reception.png" alt="Rocket Science Designs logo">
-                    <span>ROCKET RECEPTION</span>
+                    <span class="brand-text">ROCKET RECEPTION</span>
                 </a>
 
                 <!-- Desktop / mobile nav -->
