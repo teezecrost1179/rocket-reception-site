@@ -17,13 +17,13 @@
     <meta property="og:title" content="Rocket Science Designs | Web Design & Digital Creative in Winnipeg">
     <meta property="og:description" content="Freelance web design and digital creative studio helping brands look sharp, load fast, and sell more online.">
     <meta property="og:url" content="https://rocketsciencedesigns.com/">
-    <meta property="og:image" content="https://rocketsciencedesigns.com/rocket-science-designs-brandmark-300.png">
+    <meta property="og:image" content="https://rocketsciencedesigns.com//assets/rocket-reception.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rocket Science Designs | Web Design & Digital Creative in Winnipeg">
     <meta name="twitter:description" content="Websites, branding, Shopify, email, and content creation for teams that need a flexible digital generalist.">
-    <meta name="twitter:image" content="https://rocketsciencedesigns.com/rocket-science-designs-brandmark-300.png">
+    <meta name="twitter:image" content="https://rocketsciencedesigns.com//assets/rocket-reception.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/rocket-reception-favicon.png">
@@ -31,7 +31,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Kameron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -54,7 +54,7 @@
 
         body {
             margin: 0;
-            font-family: "Kameron", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             background: #ffffff;
             color: var(--text-body);
             font-size: 19px; /* body copy size */
@@ -134,7 +134,7 @@
             align-items: center;
             gap: 16px;
             text-decoration: none;
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-weight: 800;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -157,7 +157,7 @@
         nav.main-nav {
             display: flex;
             align-items: stretch;
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-size: 16px;
             text-transform: none;
         }
@@ -340,7 +340,7 @@
         }
 
         .hero-kicker {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.17em;
             font-size: 20px;              /* eyebrow mobile */
@@ -349,7 +349,7 @@
         }
 
         .hero h1 {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-weight: 700;
             font-size: 40px;              /* H1 mobile */
             line-height: 1.1;
@@ -378,7 +378,7 @@
             padding: 11px 22px;
             border-radius: 10px;          /* 10px radius */
             border: 1px solid transparent;
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-size: 16px;              /* button text size */
             text-decoration: none;
             cursor: pointer;
@@ -433,7 +433,7 @@
         }
 
         .section-kicker {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-size: 20px;              /* eyebrow mobile */
             text-transform: uppercase;
             letter-spacing: 0.18em;
@@ -442,7 +442,7 @@
         }
 
         .section-title {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-size: 40px;              /* H2 mobile */
             margin: 0;
             color: var(--text-body);
@@ -451,7 +451,7 @@
         /* Content headings */
         h1,
         h2 {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-weight: 700;
             font-size: 40px;        /* mobile size */
             line-height: 1.1;
@@ -466,7 +466,7 @@
 
         /* Sub-heads for process steps */
         h3 {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-weight: 600;
             font-size: 24px;
             line-height: 1.2;
@@ -495,7 +495,7 @@
         }
 
         .service-title {
-            font-family: "Manrope", system-ui, sans-serif;
+            font-family: "Poppins", system-ui, sans-serif;
             font-size: 22px;
             margin: 0 0 10px;
             color: var(--text-body);
@@ -714,7 +714,7 @@
       "@type": "ProfessionalService",
       "name": "Rocket Science Designs",
       "url": "https://rocketsciencedesigns.com/",
-      "image": "https://rocketsciencedesigns.com/rocket-science-designs-brandmark-300.png",
+      "image": "https://rocketsciencedesigns.com//assets/rocket-reception.png",
       "description": "Web design, branding, Shopify development, email marketing, photography, and video production for small businesses and growing brands.",
       "address": {
         "@type": "PostalAddress",
@@ -740,7 +740,7 @@
 
             <div class="header-bar">
                 <a href="/" class="brand">
-                    <img src="rocket-science-designs-brandmark-300.png" alt="Rocket Science Designs logo">
+                    <img src="/assets/rocket-reception.png" alt="Rocket Science Designs logo">
                     <span>Rocket Agent</span>
                 </a>
 
@@ -803,3 +803,4 @@
             </div>
         </div>
     </header>
+
