@@ -419,7 +419,7 @@
             min-height: 420px;
             display: flex;
             align-items: center;
-            padding: 48px;
+            padding: 0 48px 48px;
             background-image: url("/assets/hero-image-rocket-reception.jpg");
             background-size: cover;
             background-position: top;
@@ -682,7 +682,7 @@
 
             .hero-section {
                 min-height: 320px;
-                padding: 28px;
+                padding: 0 28px 28px;
             }
 
             .hero-headline {
