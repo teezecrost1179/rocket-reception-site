@@ -484,7 +484,8 @@
 
         .about-tile {
             background-color: #0da7d1;
-            background-image: radial-gradient(circle at 100% 100%, #0b97be 0%, #0da7d1 55%, #0da7d1 100%);
+            background-image: linear-gradient(135deg, #0da7d1 0%, #84d0e5 50%, #0da7d1 100%);
+            border: 2px solid #099ec7;
             border-radius: 12px;
             padding: 22px;
             color: #ffffff;
@@ -495,11 +496,12 @@
             color: #ffffff;
             font-weight: 600;
             font-size: 22px;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         }
 
         .about-tile p {
             margin: 0;
-            color: rgba(255, 255, 255, 0.9);
+            color: #099ec7;
         }
 
         .section-kicker {
