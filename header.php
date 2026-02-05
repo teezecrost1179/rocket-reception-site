@@ -500,6 +500,60 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
+        .demo-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .demo-tile {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            min-height: 240px;
+            padding: 22px;
+            border-radius: 12px;
+            border: 2px solid #099ec7;
+            color: #ffffff;
+            text-decoration: none;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .demo-tile::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            transition: background 0.2s ease;
+        }
+
+        .demo-tile:hover::before,
+        .demo-tile:focus-visible::before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .demo-tile span {
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            font-size: 20px;
+            text-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        }
+
+        .demo-tile--beauty {
+            background-image: url("/demo-winnipeg-beauty/assets/hero.jpg");
+        }
+
+        .demo-tile--reno {
+            background-image: url("/demo-winnipeg-reno-king/assets/hero.jpg");
+        }
+
+        .demo-tile--primo {
+            background-image: url("/demo-winnipeg-primo-accountants/assets/hero.jpg");
+        }
+
         .about-tile {
             background-color: #0da7d1;
             background-image: linear-gradient(135deg, #0da7d1 0%, #84d0e5 50%, #0da7d1 100%);
@@ -792,6 +846,10 @@
             .about-grid {
                 grid-template-columns: 1fr;
             }
+
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (min-width: 640px) {
@@ -808,6 +866,10 @@
 
         @media (min-width: 641px) and (max-width: 1023px) {
             .about-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .demo-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }

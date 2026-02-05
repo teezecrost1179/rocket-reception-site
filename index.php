@@ -13,6 +13,26 @@
             </div>
         </section>
 
+        <section id="demos" class="section demo-section">
+            <div class="section-header">
+                <h2 class="section-title">Try One of our Business Demos Now</h2>
+            </div>
+            <p class="section-intro">
+                Try chatting with or calling the AI receptionist from one of our made-up local businesses.
+            </p>
+            <div class="demo-grid">
+                <a class="demo-tile demo-tile--beauty" href="https://rocketreception.ca/demo-winnipeg-beauty/">
+                    <span>Try talking to our Beauty Salon receptionist</span>
+                </a>
+                <a class="demo-tile demo-tile--reno" href="https://rocketreception.ca/demo-winnipeg-reno-king">
+                    <span>Try talking to our Construction/Renovation receptionist</span>
+                </a>
+                <a class="demo-tile demo-tile--primo" href="https://rocketreception.ca/demo-winnipeg-primo-accountants">
+                    <span>Try talking to our Accountant receptionist</span>
+                </a>
+            </div>
+        </section>
+
         <section class="section what-it-is">
             <div class="section-header">
                 <h2 class="section-title">Rocket Reception is a friendly AI receptionist for small businesses</h2>
