@@ -513,7 +513,7 @@
             min-height: 240px;
             padding: 22px;
             border-radius: 12px;
-            border: 2px solid #099ec7;
+            border: 5px solid #099ec7;
             color: #ffffff;
             text-decoration: none;
             background-size: cover;
@@ -539,7 +539,7 @@
             z-index: 1;
             font-weight: 600;
             font-size: 20px;
-            text-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
         }
 
         .demo-tile--beauty {
@@ -557,7 +557,7 @@
         .about-tile {
             background-color: #0da7d1;
             background-image: linear-gradient(135deg, #0da7d1 0%, #84d0e5 50%, #0da7d1 100%);
-            border: 2px solid #099ec7;
+            border: 5px solid #099ec7;
             border-radius: 12px;
             padding: 22px;
             color: #ffffff;
