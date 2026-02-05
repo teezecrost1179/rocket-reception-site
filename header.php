@@ -514,12 +514,12 @@
             color: #ffffff;
             font-weight: 600;
             font-size: 22px;
-            text-shadow: 0 2px 3px #099ec7;
+            text-shadow: 0 2px 2px #099ec7;
         }
 
         .about-tile p {
             margin: 0;
-            color: #099ec7;
+            color: #4d4d4d;
             font-size: 17px;
         }
 
