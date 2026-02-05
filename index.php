@@ -9,7 +9,7 @@
                 <p class="hero-support">
                     Would your SMB benefit from having it's own Intelligent virtual receptionist that answers correctly, right away, at any hour?
                 </p>
-                <a class="btn hero-cta" href="https://rocketreception.com#demos">Try The Demos</a>
+                <a class="btn hero-cta" href="https://rocketreception.ca#demos">Try The Demos</a>
             </div>
         </section>
 

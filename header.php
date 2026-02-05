@@ -36,7 +36,7 @@
     <style>
         :root {
             --bg-header: #ffffff;
-            --accent: #d20909;
+            --accent: #d10d52;
             --accent-blue: #0da7d1;
             --text-light: #111111;      /* for header */
             --text-body: #111111;       /* main/body text */
@@ -429,7 +429,7 @@
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
-            margin-bottom: 32px;
+            margin-bottom: 0;
             position: relative;
             border-radius: 12px;
         }
