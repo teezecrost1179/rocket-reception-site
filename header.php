@@ -406,7 +406,7 @@
         .service-card .service-link { margin-top:12px; display:block; }
 
         .section {
-            padding-block: 72px;
+            padding-block: 60px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.06);
             scroll-margin-top: var(--nav-height);
         }
@@ -431,6 +431,7 @@
             background-repeat: no-repeat;
             margin-bottom: 32px;
             position: relative;
+            border-radius: 12px;
         }
 
         .hero-content {
@@ -457,6 +458,23 @@
             line-height: 1.5;
             color: #ffffff;
             text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-cta {
+            margin-top: 20px;
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 12px;
+            text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-cta:hover,
+        .hero-cta:focus-visible {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #ffffff;
+            transform: translateY(-1px);
         }
 
         .section-intro {
@@ -502,6 +520,7 @@
         .about-tile p {
             margin: 0;
             color: #099ec7;
+            font-size: 17px;
         }
 
         .section-kicker {
