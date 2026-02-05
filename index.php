@@ -14,10 +14,10 @@
 
         <section class="section what-it-is">
             <div class="section-header">
-                <h2 class="section-title">Instant Friendly AI Help For Your Customers and Potential Clients</h2>
+                <h2 class="section-title">Rocket Reception is a friendly AI receptionist for small businesses</h2>
             </div>
             <p class="section-intro">
-                Rocket Reception answers when you can't, and avoids lost sales. And it knows all the answers. It's as smart as you make it.
+                It answers calls, texts, and website chats using your real business policies — supporting your team instead of replacing them.
             </p>
             <div class="about-grid">
                 <article class="about-tile">
