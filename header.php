@@ -519,7 +519,6 @@
 
         .about-tile p {
             margin: 0;
-            color: #4d4d4d;
             font-size: 17px;
         }
 
@@ -570,6 +569,10 @@
         .section p {
             max-width: 800px;
             color: var(--text-muted);
+        }
+
+        .about-grid .about-tile p {
+            color: #4d4d4d;
         }
 
         /* SERVICES GRID + CARDS */
