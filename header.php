@@ -496,7 +496,7 @@
             color: #ffffff;
             font-weight: 600;
             font-size: 22px;
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 2px 3px #099ec7;
         }
 
         .about-tile p {
