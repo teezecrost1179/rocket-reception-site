@@ -85,8 +85,9 @@
   // Call-me form submission
   const callMeForm = document.getElementById("rr-callme-form");
   if (callMeForm) {
-    const apiBase = "https://rocketagent.onrender.com";
-    const subscriber = "demo-gatekeeper";
+    const apiBase = callMeForm.dataset.apiBase || "https://rocketagent.onrender.com";
+    const subscriber = callMeForm.dataset.subscriber || "demo-gatekeeper";
+    const transferPreselect = callMeForm.dataset.transferPreselect || "";
     const status = callMeForm.querySelector(".rr-form-status");
 
     callMeForm.addEventListener("submit", async (e) => {
@@ -108,7 +109,7 @@
         body: JSON.stringify({
           phone,
           subscriber,
-          transferPreselect: "accountant"
+          ...(transferPreselect ? { transferPreselect } : {})
         })
       });
 
