@@ -130,6 +130,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
       const form = e.currentTarget;
       const formData = new FormData(form);
       const responseEl = document.getElementById('form-response');
+      const emailInput = form.querySelector('input[name="email"]');
 
       try {
         const res = await fetch(form.action, {
@@ -143,6 +144,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
 
         if (!res.ok || looksLikeHtml) {
           responseEl.innerText = "Thanks — we received your request. If you don't hear back, please email support@rocketreception.ca.";
+          if (emailInput) emailInput.value = '';
           if (!res.ok) {
             console.error('Contact form error:', res.status, text);
           }
@@ -150,9 +152,11 @@ $linkPrefix = $isHome ? '' : 'index.php';
         }
 
         responseEl.innerText = text || "Thanks — message sent.";
+        if (emailInput) emailInput.value = '';
         form.reset();
       } catch (err) {
         responseEl.innerText = "Sorry, something went wrong. Please email me directly at support@rocketreception.ca.";
+        if (emailInput) emailInput.value = '';
       }
     });
   }
