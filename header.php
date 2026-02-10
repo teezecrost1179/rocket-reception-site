@@ -874,6 +874,7 @@
                 align-items: center;
                 padding-block: 0;
                 flex-wrap: wrap;           /* 👈 this allows rows */
+                gap: 0;
             }
 
             .nav-toggle {
@@ -950,12 +951,16 @@
                 color:white;
                 border-radius: 0;
                 box-shadow: none;
-                padding: 0 0 8px 18px;
-                display: none;
+                padding: 0 0 0 18px;
+                display: block;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease, padding 0.2s ease;
             }
 
             .nav-item.open > .dropdown {
-                display: block;
+                max-height: 400px;
+                padding: 0 0 8px 18px;
             }
 
             .dropdown a {
