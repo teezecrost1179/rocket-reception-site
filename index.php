@@ -76,7 +76,7 @@
                 Now it's easy to get the most repetitious tasks and requests off your plate so you can work smarter. Here's how it works:
             </p>
             <div class="video-embed">
-                <video class="intro-video" src="/assets/Rocket-Reception-Intro.mp4" controls></video>
+                <video class="intro-video" src="/assets/Rocket-Reception-Intro.mp4" poster="/assets/intro-video-poster.png" controls></video>
             </div>
         </section>
 
