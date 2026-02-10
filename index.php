@@ -33,7 +33,7 @@
             </div>
         </section>
 
-        <section class="section what-it-is">
+        <section id="what-it-is" class="section what-it-is">
             <div class="section-header">
                 <h2 class="section-title">Rocket Reception is a friendly AI receptionist for small businesses</h2>
             </div>
@@ -68,7 +68,7 @@
             </div>
         </section>
 
-        <section class="section intro-section">
+        <section id="intro-video" class="section intro-section">
             <div class="section-header">
                 <h2 class="section-title">Intro to Rocket Reception</h2>
             </div>
@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <section class="section split-section">
+        <section id="who-its-for" class="section split-section">
             <div class="split-section-inner">
                 <div class="split-text">
                     <h2 class="section-title">Built for small teams who need to stay responsive</h2>
@@ -102,7 +102,7 @@
             </div>
         </section>
 
-        <section class="section split-section">
+        <section id="whats-next" class="section split-section">
             <div class="split-section-inner split-reverse">
                 <div class="split-media">
                     <img src="/assets/whats-next.jpg" alt="Planning and future roadmap" loading="lazy">

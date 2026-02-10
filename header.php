@@ -126,7 +126,7 @@
         .brand img {
             height: 66px;
             width: auto;
-            margin: 14px 0px 2px 0px;
+            margin: 0;
         }
 
         .brand span {
@@ -872,7 +872,7 @@
         @media (max-width: 900px) {
             .header-bar {
                 align-items: center;
-                padding-block: 8px;
+                padding-block: 0;
                 flex-wrap: wrap;           /* 👈 this allows rows */
             }
 
@@ -884,12 +884,12 @@
                 order: 3;                  /* put nav AFTER logo + hamburger */
                 flex-basis: 100%;          /* take full width of row 2 */
                 width: 100%;
-                margin-top: 8px;
+                margin-top: 0;
                 flex-direction: column;
                 align-items: flex-start;
                 flex-wrap: nowrap;
                 border-top: 1px solid rgba(255, 255, 255, 0.25);
-                padding-top: 12px;
+                padding-top: 0;
             }
 
             /* Hide/show nav only when JS is available */
@@ -1119,42 +1119,43 @@
                     <ul class="nav-list">
                         <li class="nav-item">
                             <div class="nav-item-header">
-                                <a href="/" class="nav-link">Home</a>
+                                <a href="https://rocketreception.ca/" class="nav-link">Home</a>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-item-header">
-                                <a href="/how-it-works" class="nav-link">How it works</a>
+                                <a href="https://rocketreception.ca/#demos" class="nav-link">Try the Demos</a>
                             </div>
                         </li>
 
-                        <!-- INTEGRATIONS (submenu) -->
+                        <!-- WHAT IT IS (submenu) -->
                         <li class="nav-item has-menu">
                             <div class="nav-item-header">
-                                <a href="/integrations" class="nav-link">Integrations</a>
+                                <a href="https://rocketreception.ca/#what-it-is" class="nav-link">What it is</a>
                                 <button class="submenu-toggle" type="button"
                                         aria-expanded="false"
-                                        aria-label="Toggle Integrations submenu">
+                                        aria-label="Toggle What it is submenu">
                                     <span class="chevron" aria-hidden="true"></span>
                                 </button>
                             </div>
                             <ul class="dropdown">
-                                <li><a href="/integrations/email">Email</a></li>
-                                <li><a href="/integrations/scheduling">Scheduling</a></li>
-                                <li><a href="/integrations/voice">Voice</a></li>
+                                <li><a href="https://rocketreception.ca/#what-it-is">What's Rocket Reception</a></li>
+                                <li><a href="https://rocketreception.ca/#intro-video">How does it work?</a></li>
+                                <li><a href="https://rocketreception.ca/#who-its-for">Who's it For?</a></li>
+                                <li><a href="https://rocketreception.ca/#whats-next">What's next?</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item">
                             <div class="nav-item-header">
-                                <a href="/pricing" class="nav-link">Pricing</a>
+                                <a href="https://rocketreception.ca/pricing.php" class="nav-link">Pricing</a>
                             </div>
                         </li>
 
                         <li class="nav-item nav-item--edge">
                             <div class="nav-item-header">
-                                <a href="/contact" class="nav-link">Contact</a>
+                                <a href="https://rocketreception.ca/#start-project" class="nav-link">Contact</a>
                             </div>
                         </li>
 </ul>
