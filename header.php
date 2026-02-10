@@ -209,7 +209,7 @@
             width: 14px;
             height: 14px;
             background: url("/assets/down-triangle.png") center / contain no-repeat;
-            transform: rotate(45deg); /* ▼ by default */
+            transform: rotate(0deg); /* ▼ by default */
             transition: transform 0.18s ease;
             align-self: center;
             margin-top: 1px;
@@ -247,6 +247,11 @@
         }
 
         .dropdown a:hover,
+            .dropdown li:hover,
+            .dropdown li:focus-within {
+                background: transparent;
+            }
+
         .dropdown a:focus-visible {
             background: rgba(0, 0, 0, 0.04);
             color: inherit;
@@ -309,7 +314,7 @@
 
         .nav-toggle.is-open .nav-toggle-line:nth-child(1) {
             top: 8px;
-            transform: rotate(45deg);
+            transform: rotate(0deg);
         }
 
         .nav-toggle.is-open .nav-toggle-line:nth-child(2) {
@@ -935,7 +940,7 @@
                 width: 14px;
                 height: 14px;
                                 background: url("/assets/down-triangle.png") center / contain no-repeat;
-                transform: rotate(45deg);          /* ▼ when closed */
+                transform: rotate(0deg);          /* ▼ when closed */
                 transition: transform 0.18s ease;
                 align-self: center;
                 margin-top: 1px;
@@ -953,7 +958,7 @@
                 background: rgba(0, 0, 0, 0.04);
                                 border-radius: 0;
                 box-shadow: none;
-                padding: 0 0 0 18px;
+                padding: 0;
                 display: block;
                 max-height: 0;
                 overflow: hidden;
@@ -963,17 +968,22 @@
 
             .nav-item.open > .dropdown {
                 max-height: 400px;
-                padding: 0 0 8px 18px;
+                padding: 0 0 8px 0;
             }
 
             .dropdown a {
                 padding-inline: 0;
                 text-align: center;
+            }
+
             .dropdown a:hover,
             .dropdown a:focus-visible {
                 background: transparent;
             }
 
+            .dropdown li:hover,
+            .dropdown li:focus-within {
+                background: transparent;
             }
 
             .nav-link {
