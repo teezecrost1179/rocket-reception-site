@@ -1,3 +1,13 @@
 # Ignore any folders starting with "temp" at any depth
 temp*/
 **/temp*/
+
+# Large video files
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.avi
+*.mkv
+*.mpg
+*.mpeg
