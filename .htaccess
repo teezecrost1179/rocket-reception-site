@@ -1,6 +1,7 @@
 # Enable rewrite engine
 RewriteEngine On
 RewriteBase /
+Options -MultiViews
 
 # ---------------------------------------
 # 1. Remove .php from URLs

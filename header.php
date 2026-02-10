@@ -247,11 +247,6 @@
         }
 
         .dropdown a:hover,
-            .dropdown li:hover,
-            .dropdown li:focus-within {
-                background: transparent;
-            }
-
         .dropdown a:focus-visible {
             background: rgba(0, 0, 0, 0.04);
             color: inherit;
