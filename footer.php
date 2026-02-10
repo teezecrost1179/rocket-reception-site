@@ -11,13 +11,19 @@ $linkPrefix = $isHome ? '' : 'index.php';
       <a href="/integrations">Integrations</a>
       <a href="/pricing">Pricing</a>
       <a href="/contact">Contact</a>
-      <a href="/support">Support</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-      <a href="/security">Security</a>
-      <a href="/data-deletion">Data deletion</a>
-</div>
+    </div>
   </nav>
+  <div class="footer-policies">
+    <p class="footer-heading">Policies</p>
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="/acceptable-use">Acceptable Use Policy</a>
+      <a href="/data-handling">Data Handling &amp; Use</a>
+      <a href="/security">Security</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
   <p style="font-size: 0.9rem;">&copy; 2025 Rocket Agent — A service by Rocket Science Designs.</p>
 
   <style>
@@ -34,6 +40,17 @@ $linkPrefix = $isHome ? '' : 'index.php';
       text-decoration: none;
       font-weight: 500;
       font-size: 0.95rem;
+    }
+
+    .footer-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      color: #333;
+    }
+
+    .footer-policies {
+      margin-bottom: 1rem;
     }
 
     @media (max-width: 600px) {
@@ -125,7 +142,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
         const looksLikeHtml = contentType.includes('text/html') || /<\!DOCTYPE|<html/i.test(text);
 
         if (!res.ok || looksLikeHtml) {
-          responseEl.innerText = "Thanks — we received your request. If you don't hear back, please email hello@rocketsciencedesigns.com.";
+          responseEl.innerText = "Thanks — we received your request. If you don't hear back, please email support@rocketreception.ca.";
           if (!res.ok) {
             console.error('Contact form error:', res.status, text);
           }
@@ -135,7 +152,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
         responseEl.innerText = text || "Thanks — message sent.";
         form.reset();
       } catch (err) {
-        responseEl.innerText = "Sorry, something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
+        responseEl.innerText = "Sorry, something went wrong. Please email me directly at support@rocketreception.ca.";
       }
     });
   }

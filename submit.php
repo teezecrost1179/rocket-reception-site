@@ -1,10 +1,10 @@
 <?php
 require_once __DIR__ . '/config.php';
 // Settings
-$to = "hello@rocketsciencedesigns.com";
+$to = "support@rocketreception.ca";
 $subject = "New Inquiry via Rocket Reception Website";
 $postmarkToken = $postmarkToken ?? "";
-$fromEmail = $postmarkFrom ?? "hello@rocketsciencedesigns.com";
+$fromEmail = $postmarkFrom ?? "support@rocketreception.ca";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   http_response_code(405);
@@ -47,7 +47,7 @@ $safeReplyTo = str_replace(array("\r", "\n"), '', $email);
 
 if (!$postmarkToken) {
   http_response_code(500);
-  echo "Email service is not configured. Please email me directly at hello@rocketsciencedesigns.com.";
+  echo "Email service is not configured. Please email me directly at support@rocketreception.ca.";
   exit;
 }
 
@@ -94,7 +94,7 @@ curl_close($ch);
 
 if ($resp === false) {
   http_response_code(500);
-  echo "Something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
+  echo "Something went wrong. Please email me directly at support@rocketreception.ca.";
   exit;
 }
 
@@ -103,6 +103,6 @@ if ($httpCode >= 200 && $httpCode < 300) {
   echo "Thanks! I???ll get back to you shortly.";
 } else {
   http_response_code(500);
-  echo "Something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
+  echo "Something went wrong. Please email me directly at support@rocketreception.ca.";
 }
 ?>

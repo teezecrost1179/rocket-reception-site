@@ -1088,10 +1088,10 @@
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Rocket Science Designs",
-      "url": "https://rocketsciencedesigns.com/",
-      "image": "https://rocketsciencedesigns.com//assets/logo.png",
-      "description": "Web design, branding, Shopify development, email marketing, photography, and video production for small businesses and growing brands.",
+      "name": "Rocket Reception",
+      "url": "https://rocketreception.ca/",
+      "image": "https://rocketreception.ca/assets/logo.png",
+      "description": "AI receptionist for small businesses that answers calls, texts, and chats using your real business rules, supporting your team without replacing them.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Winnipeg",
@@ -1110,7 +1110,7 @@
         <div class="max-width header-inner">
             <div class="header-bar">
                 <a href="/" class="brand">
-                    <img src="/assets/logo.png" alt="Rocket Science Designs logo">
+                    <img src="/assets/logo.png" alt="Rocket Reception logo">
                     <span class="brand-text">ROCKET RECEPTION</span>
                 </a>
 
