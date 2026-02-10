@@ -24,7 +24,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
       <a href="/contact">Contact</a>
     </div>
   </div>
-  <p style="font-size: 0.9rem;">&copy; 2025 Rocket Agent — A service by Rocket Science Designs.</p>
+  <p style="font-size: 0.9rem;">&copy; <?php echo date('Y'); ?> Rocket Reception is operated by Rocket Science Designs.</p>
 
   <style>
     .footer-links {
