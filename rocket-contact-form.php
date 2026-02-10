@@ -40,7 +40,7 @@
       <button type="submit" name="submit">Start the conversation</button>
 
       <div id="form-response">
-        No pressure — this goes straight to me.
+        No pressure — looking forward to hearing from you :)
       </div>
       <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
         <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>

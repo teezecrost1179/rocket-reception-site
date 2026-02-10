@@ -631,7 +631,7 @@
         }
 
         #contact-form button[type="submit"]:hover {
-            background: #f03939;
+            background: #b40b46;
             transform: translateY(-1px);
             box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22);
         }
