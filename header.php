@@ -203,8 +203,8 @@
 
         .has-menu .chevron {
             display: inline-block;
-            width: 8px;
-            height: 8px;
+            width: 12px;
+            height: 12px;
             border: solid currentColor;
             border-width: 0 1.5px 1.5px 0;
             transform: rotate(45deg); /* ▼ by default */
@@ -931,7 +931,7 @@
                 display: inline-block;
                 width: 8px;
                 height: 8px;
-                color:white;
+                color: var(--text-light);
                 border: solid currentColor;
                 border-width: 0 1.5px 1.5px 0;
                 transform: rotate(45deg);          /* ▼ when closed */
@@ -948,7 +948,7 @@
                 position: static;
                 min-width: 0;
                 background: transparent;
-                color:white;
+                color: var(--text-light);
                 border-radius: 0;
                 box-shadow: none;
                 padding: 0 0 0 18px;
