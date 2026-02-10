@@ -68,6 +68,63 @@
             </div>
         </section>
 
+        <section class="section intro-section">
+            <div class="section-header">
+                <h2 class="section-title">Intro to Rocket Reception</h2>
+            </div>
+            <p class="section-intro">
+                Now it's easy to get the most repetitious tasks and requests off your plate so you can work smarter. Here's how it works:
+            </p>
+            <div class="video-embed">
+                <video class="intro-video" src="/assets/Rocket-Reception-Intro.mp4" controls></video>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="split-section-inner">
+                <div class="split-text">
+                    <h2 class="section-title">Built for small teams who need to stay responsive</h2>
+                    <p class="section-intro">
+                        Rocket Reception is ideal for businesses that want to respond quickly and professionally to customers, without pulling staff away from their primary work or hiring a dedicated receptionist.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Small and medium-sized businesses</li>
+                        <li>Owner-operated teams wearing multiple hats</li>
+                        <li>Businesses without a full-time receptionist</li>
+                        <li>Teams that get interrupted by calls, texts, and chat messages</li>
+                        <li>Businesses that want to offer reliable after-hours responsiveness</li>
+                        <li>Service-based businesses that rely on timely customer communication</li>
+                    </ul>
+                </div>
+                <div class="split-media">
+                    <img src="/assets/who-its-for.jpg" alt="Small team serving customers" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="split-section-inner split-reverse">
+                <div class="split-media">
+                    <img src="/assets/whats-next.jpg" alt="Planning and future roadmap" loading="lazy">
+                </div>
+                <div class="split-text">
+                    <h2 class="section-title">Actively building what’s next</h2>
+                    <p class="section-intro">
+                        Rocket Reception is evolving alongside the businesses using it. These upcoming features are in development and will roll out gradually.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Email integration, so inquiries are handled consistently across channels</li>
+                        <li>Social message responses for common platforms</li>
+                        <li>Appointment booking with popular tools, including:</li>
+                        <li>Google Calendar</li>
+                        <li>Calendly</li>
+                        <li>Square appointments</li>
+                        <li>Expanded conversation summaries and follow-ups</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </div>
     <br><br><br><br>
     <?php include 'rocket-contact-form.php'; ?>
