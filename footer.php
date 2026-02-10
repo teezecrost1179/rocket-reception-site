@@ -6,11 +6,11 @@ $linkPrefix = $isHome ? '' : 'index.php';
 <footer style="background:#eee; text-align:center; padding:1.5rem;">
   <nav style="margin-bottom: 1rem;">
     <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/how-it-works">How it works</a>
-      <a href="/integrations">Integrations</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/contact">Contact</a>
+      <a href="https://rocketreception.ca/">Home</a>
+      <a href="https://rocketreception.ca/#demos">Try the Demos</a>
+      <a href="https://rocketreception.ca/#what-it-is">What it is</a>
+      <a href="https://rocketreception.ca/pricing.php">Pricing</a>
+      <a href="https://rocketreception.ca/#start-project">Contact</a>
     </div>
   </nav>
   <div class="footer-policies">
