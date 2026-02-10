@@ -154,8 +154,7 @@
             justify-content: center;
             padding: 0 18px;
             text-decoration: none;
-            color: var(--text-light);
-            white-space: nowrap;
+                        white-space: nowrap;
             transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
         }
 
@@ -206,17 +205,18 @@
         }
 
         .has-menu .chevron {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border: solid currentColor;
-            border-width: 0 1.5px 1.5px 0;
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: url("/assets/down-triangle.png") center / contain no-repeat;
             transform: rotate(45deg); /* ▼ by default */
             transition: transform 0.18s ease;
+            align-self: center;
+            margin-top: 1px;
         }
 
         .nav-item.open .chevron {
-            transform: rotate(-135deg);   /* ◀ when open on mobile */
+            transform: rotate(180deg);   /* ◀ when open on mobile */
         }
 
         .dropdown {
@@ -275,8 +275,7 @@
             padding: 0 4px;
             margin-left: 8px;
             cursor: pointer;
-            color: var(--text-light);
-            align-items: center;
+                        align-items: center;
             justify-content: center;
         }
 
@@ -932,33 +931,33 @@
 
             /* The little triangle */
             .chevron {
-                display: inline-block;
-                width: 8px;
-                height: 8px;
-                color: var(--text-light);
-                border: solid currentColor;
-                border-width: 0 1.5px 1.5px 0;
+                display: block;
+                width: 14px;
+                height: 14px;
+                                background: url("/assets/down-triangle.png") center / contain no-repeat;
                 transform: rotate(45deg);          /* ▼ when closed */
                 transition: transform 0.18s ease;
+                align-self: center;
+                margin-top: 1px;
             }
 
             /* Rotate when the submenu is open */
             .nav-item.open .chevron {
-                transform: rotate(-135deg);        /* ▲ / ◀ depending how you see it */
+                transform: rotate(180deg);        /* ▲ / ◀ depending how you see it */
             }
 
             /* Mobile dropdowns: collapse/expand instead of hover */
             .dropdown {
                 position: static;
                 min-width: 0;
-                background: transparent;
-                color: var(--text-light);
-                border-radius: 0;
+                background: rgba(0, 0, 0, 0.04);
+                                border-radius: 0;
                 box-shadow: none;
                 padding: 0 0 0 18px;
                 display: block;
                 max-height: 0;
                 overflow: hidden;
+                text-align: center;
                 transition: max-height 0.2s ease, padding 0.2s ease;
             }
 
@@ -969,6 +968,12 @@
 
             .dropdown a {
                 padding-inline: 0;
+                text-align: center;
+            .dropdown a:hover,
+            .dropdown a:focus-visible {
+                background: transparent;
+            }
+
             }
 
             .nav-link {
