@@ -197,7 +197,11 @@
         }
 
         .has-menu .submenu-toggle:focus {
-            outline: 2px solid var(--accent);
+            outline: none;
+        }
+
+        .has-menu .submenu-toggle:focus-visible {
+            outline: 2px solid var(--accent-blue);
             outline-offset: 2px;
         }
 
