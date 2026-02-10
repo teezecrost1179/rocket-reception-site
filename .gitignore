@@ -11,3 +11,6 @@ temp*/
 *.mkv
 *.mpg
 *.mpeg
+
+# Local config with secrets
+config.php

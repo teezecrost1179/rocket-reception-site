@@ -1,7 +1,10 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Settings
 $to = "hello@rocketsciencedesigns.com";
-$subject = "New Inquiry via Rocket Agent Website";
+$subject = "New Inquiry via Rocket Reception Website";
+$postmarkToken = $postmarkToken ?? "";
+$fromEmail = $postmarkFrom ?? "hello@rocketsciencedesigns.com";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   http_response_code(405);
@@ -42,8 +45,14 @@ if (!$name || !$email || !$message) {
 // Prevent header injection
 $safeReplyTo = str_replace(array("\r", "\n"), '', $email);
 
+if (!$postmarkToken) {
+  http_response_code(500);
+  echo "Email service is not configured. Please email me directly at hello@rocketsciencedesigns.com.";
+  exit;
+}
+
 // Build email body
-$body = "You received a new message from Rocket Agent's contact form:\n\n";
+$body = "You received a new message from Rocket Reception's contact form:\n\n";
 $body .= "Name: {$name}\n";
 $body .= "Email: {$email}\n";
 
@@ -59,14 +68,39 @@ if ($source !== '') {
 
 $body .= "\nMessage:\n{$message}\n";
 
-// Headers
-$headers = "From: Rocket Agent <no-reply@rocketsciencedesigns.com>\r\n";
-$headers .= "Reply-To: {$safeReplyTo}\r\n";
+// Send via Postmark
+$payload = array(
+  "From" => $fromEmail,
+  "To" => $to,
+  "Subject" => $subject,
+  "TextBody" => $body,
+  "ReplyTo" => $safeReplyTo
+);
 
-// Send
-if (mail($to, $subject, $body, $headers)) {
+$ch = curl_init("https://api.postmarkapp.com/email");
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+  "Accept: application/json",
+  "Content-Type: application/json",
+  "X-Postmark-Server-Token: " . $postmarkToken
+));
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+
+$resp = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlErr = curl_error($ch);
+curl_close($ch);
+
+if ($resp === false) {
+  http_response_code(500);
+  echo "Something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
+  exit;
+}
+
+if ($httpCode >= 200 && $httpCode < 300) {
   http_response_code(200);
-  echo "Thanks! I’ll get back to you shortly.";
+  echo "Thanks! I???ll get back to you shortly.";
 } else {
   http_response_code(500);
   echo "Something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
