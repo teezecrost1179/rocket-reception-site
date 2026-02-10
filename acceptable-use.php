@@ -2,7 +2,7 @@
 
 <main>
     <section class="section">
-        <div class="max-width">
+        <div class="max-width policy-content">
             <div class="section-header">
                 <h1 class="section-title">Acceptable Use Policy</h1>
             </div>

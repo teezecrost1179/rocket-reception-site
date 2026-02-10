@@ -556,6 +556,23 @@
             margin-bottom: 8px;
         }
 
+        .policy-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .policy-content .section-header,
+        .policy-content .section-title,
+        .policy-content .section-intro {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         /* START A PROJECT â€“ FORM (Rocket Reception) */
         #start-project #contact-form {
             margin-top: 28px;
