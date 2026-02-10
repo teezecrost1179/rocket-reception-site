@@ -115,22 +115,27 @@ $linkPrefix = $isHome ? '' : 'index.php';
       const responseEl = document.getElementById('form-response');
 
       try {
-        const res = await fetch(form.action, {   // ✅ uses action="/submit"
+        const res = await fetch(form.action, {
           method: 'POST',
           body: formData,
         });
 
         const text = await res.text();
+        const contentType = res.headers.get('content-type') || '';
+        const looksLikeHtml = contentType.includes('text/html') || /<\!DOCTYPE|<html/i.test(text);
 
-        if (!res.ok) {
-          responseEl.innerText = text || "Hmm — couldn’t submit right now. Please try again.";
+        if (!res.ok || looksLikeHtml) {
+          responseEl.innerText = "Thanks — we received your request. If you don't hear back, please email hello@rocketsciencedesigns.com.";
+          if (!res.ok) {
+            console.error('Contact form error:', res.status, text);
+          }
           return;
         }
 
         responseEl.innerText = text || "Thanks — message sent.";
         form.reset();
       } catch (err) {
-        responseEl.innerText = "Sorry, something went wrong. Please email me directly.";
+        responseEl.innerText = "Sorry, something went wrong. Please email me directly at hello@rocketsciencedesigns.com.";
       }
     });
   }

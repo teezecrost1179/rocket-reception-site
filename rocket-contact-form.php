@@ -11,7 +11,7 @@
       send a note below.
     </p>
 
-    <form id="contact-form" method="post" action="/submit">
+    <form id="contact-form" method="post" action="/submit.php">
       <!-- Keep these names to preserve your CSS grid behavior -->
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
