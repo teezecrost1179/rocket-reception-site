@@ -69,8 +69,9 @@ if ($source !== '') {
 $body .= "\nMessage:\n{$message}\n";
 
 // Send via Postmark
+$fromName = $name ? $name : "Rocket Reception";
 $payload = array(
-  "From" => $fromEmail,
+  "From" => $fromName . " <" . $fromEmail . ">",
   "To" => $to,
   "Subject" => $subject,
   "TextBody" => $body,
