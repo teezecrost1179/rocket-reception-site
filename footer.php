@@ -71,7 +71,7 @@ $linkPrefix = $isHome ? '' : 'index.php';
 </footer>
 
 
-<script src="/assets/scripts.js"></script>
+<script src="/scripts.js"></script>
 
 
 
