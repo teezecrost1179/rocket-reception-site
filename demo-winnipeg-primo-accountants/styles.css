@@ -613,6 +613,12 @@ body.modal-open{
   text-decoration: underline;
 }
 
+.section .rr-eyebrow a,
+.section .rr-eyebrow a:visited{
+  color: #111111;
+  text-decoration: underline;
+}
+
 /* Modal */
 .modal-backdrop{
   position: fixed;
