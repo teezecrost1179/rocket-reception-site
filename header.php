@@ -435,6 +435,7 @@
             margin-bottom: 0;
             position: relative;
             border-radius: 12px;
+            overflow: hidden;
         }
 
         .hero-content {
@@ -1044,6 +1045,7 @@
                 inset: 0;
                 background: rgba(0, 0, 0, 0.3);
                 z-index: 0;
+                border-radius: inherit;
             }
 
             .hero p {
