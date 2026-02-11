@@ -162,5 +162,12 @@ $linkPrefix = $isHome ? '' : 'index.php';
   }
 
 </script>
+
+<script
+  src="https://widget.rocketreception.ca/widget.js"
+  data-api-base="https://rocketagent.onrender.com"
+  data-subscriber="rocketreception"
+  data-auto="true"
+></script>
 </body>
 </html>
