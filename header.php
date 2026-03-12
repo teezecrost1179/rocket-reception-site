@@ -25,6 +25,15 @@
     <meta name="twitter:description" content="Fast, accurate call, text, and chat handling for small businesses—without replacing your staff.">
     <meta name="twitter:image" content="https://rocketreception.ca/assets/logo.png">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ1Y2FEMG5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TQ1Y2FEMG5');
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/rocket-reception-favicon.png">
 
