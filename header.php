@@ -8,7 +8,7 @@
     <meta name="description" content="Rocket Reception is an AI receptionist for Manitoba small businesses. It answers calls, texts, and website chats using your real business policies—supporting your team, not replacing them.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://rocketreception.ca/">
+    <link rel="canonical" href="https://rocketreception.ca<?php echo strtok($_SERVER['REQUEST_URI'], '?'); ?>">
 
     <meta name="keywords" content="AI receptionist Manitoba, virtual receptionist Winnipeg, small business call handling, after-hours reception, Rocket Reception">
 
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Rocket Reception | AI Receptionist for Manitoba Small Businesses">
     <meta property="og:description" content="An AI receptionist that answers calls, texts, and chats using your real business rules—so customers get fast, accurate answers even after hours.">
-    <meta property="og:url" content="https://rocketreception.ca/">
+    <meta property="og:url" content="https://rocketreception.ca<?php echo strtok($_SERVER['REQUEST_URI'], '?'); ?>">
     <meta property="og:image" content="https://rocketreception.ca/assets/logo.png">
 
     <!-- Twitter Card -->

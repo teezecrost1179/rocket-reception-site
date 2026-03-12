@@ -5,6 +5,12 @@ RewriteBase /
 Options -MultiViews
 
 # ---------------------------------------
+# 0. Force HTTPS
+# ---------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ---------------------------------------
 # 1. Remove .php from URLs
 # ---------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-d
